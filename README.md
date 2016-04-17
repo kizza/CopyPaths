@@ -1,2 +1,2 @@
-# copy-paths
-SublimeText 3 Plugin to copy useful paths when deving
+# CopyPaths
+Simple SublimeText 3 Plugin to copy useful paths when devving

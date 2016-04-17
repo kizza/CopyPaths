@@ -1,0 +1,14 @@
+[
+  {
+    "caption": "Copy File Path",
+    "command": "copy_file_path"
+  },
+  {
+    "caption": "Copy Test Path",
+    "command": "copy_test_path"
+  },
+  {
+    "caption": "Copy Rake Path",
+    "command": "copy_rake_test_path"
+  }
+]
