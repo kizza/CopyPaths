@@ -1,0 +1,22 @@
+[
+  {
+    "caption": "Paths: Open Test File",
+    "command": "open_test_file"
+  },
+  {
+    "caption": "Paths: Copy File Path",
+    "command": "copy_file_path"
+  },
+  {
+    "caption": "Paths: Copy Test Path",
+    "command": "copy_test_path"
+  },
+  {
+    "caption": "Paths: Execute Test File",
+    "command": "execute_test_path"
+  },
+  {
+    "caption": "Paths: Execute Individual Test",
+    "command": "execute_individual_test_path"
+  }
+]
