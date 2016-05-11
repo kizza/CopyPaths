@@ -1,6 +1,7 @@
 import sublime
 import sublime_plugin
 import os
+import re
 
 def alert(msg):
 	sublime.message_dialog(msg)
@@ -90,7 +91,10 @@ class ExecuteIndividualTestPathCommand(sublime_plugin.TextCommand):
 			alert("No individual test found")
 			return
 
-		test_name = test_match.replace('"', "").replace("do", "").strip().replace(" ", "_")
+		test_name = test_match.replace('"', "")
+		test_name = re.sub(r'do$', "", test_name)
+		test_name = test_name.strip().replace(" ", "_")
+
 		cmd = "bin/rake test %s TESTOPTS=\"--name=%s\"" % \
 			(get_test_path(), test_name)
 		execute_terminal(cmd)
